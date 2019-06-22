@@ -6,13 +6,13 @@ The webservice can be started through Flask framework using python server.py
 ## Load a model
 
 Start the MachineLearning.py file, edit the GRU_model and use following parameters/Settings:
-### LSTM model:
+#### LSTM model:
 Batch_size 50
 Epochs: 40
 Units: 80
 This will give approximatelu 65.8% correlation
 
-### GRU model:
+#### GRU model:
 Batch_size 50
 Epochs: 15
 Units: 100
@@ -21,12 +21,12 @@ This will give approximatelu 61.7% correlation
 Modifications can be made, good hardware required. 
 Check size of files in order to know how much ram that is required. 
 
-### Other
+#### Other
 Check that right directory and files is selected, alternative if CSV or XMLX exists inside the folder.
 
 Save the model that is created and add it to the MLHandler.py and start the webservice through server.py
 
-### Embedding
+## Embedding
 The embedding can be found at: 
 http://vectors.nlpl.eu/repository/ <br />
 

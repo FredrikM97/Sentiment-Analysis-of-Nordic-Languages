@@ -86,13 +86,13 @@ def build_model(embedding):
         input_length=MAXLEN,
         trainable=False)
 
-    GRU_layer1 = GRU(
+    layer1 = GRU(
         units=100,
         dropout=0.5,
         recurrent_dropout=0.5,
         return_sequences=True)
 
-    GRU_layer2 = GRU(
+    layer2 = GRU(
         units=100,
         dropout=0.5,
         recurrent_dropout=0.5,
@@ -102,8 +102,8 @@ def build_model(embedding):
     
     model = Sequential()
     model.add(keras_embedding)
-    model.add(GRU_layer1)
-    model.add(GRU_layer2)
+    model.add(layer1)
+    model.add(layer2)
     model.add(dense_node)
     model.compile(optimizer='rmsprop',loss='mae')
     return model

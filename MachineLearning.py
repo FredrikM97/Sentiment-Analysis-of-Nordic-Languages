@@ -1,5 +1,5 @@
 '''
-LSTM model for sentiment prediction of reviews
+Model creation for sentiment prediction of reviews
 '''
 from __future__ import print_function
 print('Importing packages...')

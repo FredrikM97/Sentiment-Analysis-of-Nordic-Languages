@@ -1,5 +1,6 @@
 # Bachelor Thesis - Sentiment Analysis of Nordic Languages
-Sentiment Analysis of Nordic Languages for Quicksearch
+
+This project is a bachelor thesis in computer science at Halmstad University. The project is done by Fredrik Mårtensson and Jesper Holmblad. The project aims to investigate the possibility of extracting a tonality through sentiment analysis of the Nordic languages; Swedish, Danish and Norwegian.
 
 The webservice can be started through Flask framework using python server.py
 

@@ -22,7 +22,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Enviroment variables
-REPOSITORY = ["D:/Exjobb/models/", "D:/Exjobb/embedding/", "D:/Exjobb/data/"]
+# Replace directory with a valid path
+REPOSITORY = ["directory/models/", "directory/embedding/", "directory/data/"]
 EMBEDDINGZIP = ["69 swe.zip", "38 dan.zip", "58 nor.zip"]
 
 # Keras model variables

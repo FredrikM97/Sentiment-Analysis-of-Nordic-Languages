@@ -34,11 +34,13 @@ BATCH_SIZE = 50
 print('Loading data...')
 
 #Excel files
-swe_data = pd.io.excel.read_excel(REPOSITORY[2]+'Allt utom golf_se.xlsx', sheet_name=[4], dtype={'Comment': str})
+#Replace FILENAME
+swe_data = pd.io.excel.read_excel(REPOSITORY[2]+'FILENAME.xlsx', sheet_name=[4], dtype={'Comment': str})
 swe_data = pd.concat([swe_data[i] for i in swe_data.keys()],ignore_index=True)
 
 #CSV files
-#df2 = pd.read_csv(REPOSITORY+'golf_se.csv',sep=';',dtype={'aw':str,'asd':float},encoding='utf_8')
+#Replace FILENAME
+#df2 = pd.read_csv(REPOSITORY+'FILENAME.csv',sep=';',dtype={'aw':str,'asd':float},encoding='utf_8')
 #df2 = df2.rename({'aw':'Comment', 'asd':'NPS'}, axis='columns')
 
 #swe_data = pd.concat([df1,df2],sort=False,ignore_index=True)

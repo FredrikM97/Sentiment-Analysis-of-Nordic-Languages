@@ -1,5 +1,5 @@
-# Bachelor-project---Sentimental-Analysis-of-Nordic-Languages
-Sentimental Analysis of Nordic Languages for Quicksearch
+# Bachelor Thesis Sentiment Analysis of Nordic Languages
+Sentiment Analysis of Nordic Languages for Quicksearch
 
 The webservice can be started through Flask framework using python server.py
 

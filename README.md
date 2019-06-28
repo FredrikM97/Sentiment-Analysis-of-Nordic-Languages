@@ -22,7 +22,7 @@ This will give approximatelu 61.7% correlation
 Modifications can be made, good hardware required. 
 Check size of files in order to know how much ram that is required. 
 
-#### Configuration
+#### Configuration:
 Check that right directory and files is selected, alternative if CSV or XMLX exists inside the folder.
 
 Save the model that is created and add it to the MLHandler.py and start the webservice through server.py

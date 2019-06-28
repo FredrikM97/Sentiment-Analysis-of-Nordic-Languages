@@ -5,7 +5,7 @@ The webservice can be started through Flask framework using python server.py
 
 ## Load a model
 
-Start the MachineLearning.py file, edit the GRU_model and use following parameters/Settings:
+Start the MachineLearning.py file, edit layer1/layer2 and use following parameters/Settings:
 #### LSTM model:
 Batch_size 50
 Epochs: 40

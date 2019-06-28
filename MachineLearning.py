@@ -89,14 +89,14 @@ def build_model(embedding):
         input_length=MAXLEN,
         trainable=False)
 
-    layer1 = GRU(
-        units=100,
+    layer1 = LSTM(
+        units=80,
         dropout=0.5,
         recurrent_dropout=0.5,
         return_sequences=True)
 
-    layer2 = GRU(
-        units=100,
+    layer2 = LSTM(
+        units=80,
         dropout=0.5,
         recurrent_dropout=0.5,
         return_sequences=False)
@@ -116,7 +116,7 @@ model = build_model(embedding)
 hitory = model.fit(
   x_train, y_train,
   batch_size=BATCH_SIZE,
-  epochs=15,
+  epochs=40,
   verbose=2,
   validation_data=(x_test, y_test))
 print('Evaluate... ',)
@@ -128,10 +128,10 @@ def sentiment(sentence):
     return str(model.predict(preprocess(pd.Series(sentence)))[0][0])
 
 def save():
-    model.save(REPOSITORY[0]+'nor_model.h5')
+    model.save(REPOSITORY[0]+'model_name.h5')
 
 def load():
-    model = load_model(REPOSITORY+'swe_model_GRU_FRE_T1.h5')
+    model = load_model(REPOSITORY+'model_name.h5')
 
 def boxplot():
   pre = model.predict(x_test)
